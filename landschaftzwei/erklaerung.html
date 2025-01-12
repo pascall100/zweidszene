@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Erklärung Tabelle</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+      font-weight: bold;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <h1>Code Erklärung in Tabelle</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Codeabschnitt</th>
+        <th>Beschreibung</th>
+        <th>Technik / Schlagwörter</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>`const canvas = document.getElementById('landscape');`</td>
+        <td>Verknüpft das `<canvas>`-Element im HTML-Dokument mit der JavaScript-Logik.</td>
+        <td>HTML5 Canvas, DOM-Element auswählen</td>
+      </tr>
+      <tr>
+        <td>`const ctx = canvas.getContext('2d');`</td>
+        <td>Erstellt einen 2D-Kontext zum Zeichnen auf der Leinwand (`canvas`).</td>
+        <td>2D-Rendering, Canvas-API</td>
+      </tr>
+      <tr>
+        <td>`const button = document.getElementById('moveFlowers');`</td>
+        <td>Verknüpft den Button mit dem JavaScript-Code, um ihn interaktiv zu machen.</td>
+        <td>DOM-Element auswählen, Interaktivität</td>
+      </tr>
+      <tr>
+        <td>`canvas.width = window.innerWidth;`<br>`canvas.height = window.innerHeight;`</td>
+        <td>Setzt die Größe der Leinwand auf die volle Fenstergröße.</td>
+        <td>Responsive Design, Fenstergröße abfragen</td>
+      </tr>
+      <tr>
+        <td>`function drawSky() { ... }`</td>
+        <td>Zeichnet den Himmel mit einem vertikalen Farbverlauf von Blau nach Weiß.</td>
+        <td>Farbverlauf, `createLinearGradient`</td>
+      </tr>
+      <tr>
+        <td>`function drawGrass() { ... }`</td>
+        <td>Zeichnet die Wiese als grünes Rechteck in der unteren Hälfte der Leinwand.</td>
+        <td>Rechtecke zeichnen, Flächen füllen</td>
+      </tr>
+      <tr>
+        <td>`const flowers = [];`<br>`const clouds = [];`</td>
+        <td>Arrays zur Speicherung der Position und Animationseigenschaften von Blumen und Wolken.</td>
+        <td>Arrays, Animation</td>
+      </tr>
+      <tr>
+        <td>`function initFlowers() { ... }`</td>
+        <td>Erstellt Blumen mit zufälligen Positionen und Schwankungseigenschaften.</td>
+        <td>Zufall (`Math.random()`), Initialisierung</td>
+      </tr>
+      <tr>
+        <td>`function initClouds() { ... }`</td>
+        <td>Erstellt Wolken mit zufälligen Größen, Geschwindigkeiten und Positionen.</td>
+        <td>Zufall, Initialisierung</td>
+      </tr>
+      <tr>
+        <td>`function drawFlower(x, y) { ... }`</td>
+        <td>Zeichnet eine Blume mit einem Stängel, Blütenblättern und einer Mitte.</td>
+        <td>Kreise (`arc()`), Schleifen (`for`), Formen</td>
+      </tr>
+      <tr>
+        <td>`function drawCloud(x, y, size) { ... }`</td>
+        <td>Zeichnet eine Wolke als Gruppe von überlappenden Kreisen.</td>
+        <td>Kreise (`arc()`), Formgruppen</td>
+      </tr>
+      <tr>
+        <td>`function drawLandscape() { ... }`</td>
+        <td>Zeichnet den Himmel, die Wolken, die Wiese und die Blumen.</td>
+        <td>Zeichenschichten, Wiederverwendung von Funktionen</td>
+      </tr>
+      <tr>
+        <td>`flowers.forEach(...)`<br>`clouds.forEach(...)`</td>
+        <td>Iteriert durch Blumen bzw. Wolken und zeichnet bzw. animiert sie.</td>
+        <td>Arrays durchlaufen, Animationen</td>
+      </tr>
+      <tr>
+        <td>`requestAnimationFrame(animateScene);`</td>
+        <td>Fordert den nächsten Animationsframe an (wird von der Browser-Engine gesteuert).</td>
+        <td>Animation, `requestAnimationFrame`</td>
+      </tr>
+      <tr>
+        <td>`button.addEventListener('click', () => { ... });`</td>
+        <td>Schaltet die Animation ein/aus, wenn der Button geklickt wird.</td>
+        <td>Event Listener, Interaktivität</td>
+      </tr>
+      <tr>
+        <td>`ctx.clearRect(0, 0, canvas.width, canvas.height);`</td>
+        <td>Löscht den gesamten Canvas-Bereich, bevor neue Frames gezeichnet werden.</td>
+        <td>Canvas-Reset, Animation</td>
+      </tr>
+      <tr>
+        <td>`flower.x += Math.sin(flower.offset) * flower.sway;`<br>`flower.offset += 0.05;`</td>
+        <td>Simuliert das Schwanken der Blumen durch eine Sinusfunktion.</td>
+        <td>Animation, Sinusbewegung</td>
+      </tr>
+      <tr>
+        <td>`cloud.x += cloud.speed;`<br>`if (cloud.x - cloud.size > canvas.width) { ... }`</td>
+        <td>Bewegt die Wolken von links nach rechts; setzt sie zurück, wenn sie den Bildschirm verlassen.</td>
+        <td>Animation, Endlosschleifen</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

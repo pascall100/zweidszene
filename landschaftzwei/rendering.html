@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rendering in der 2D-Spieleprogrammierung</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    h2 {
+      color: #34495e;
+    }
+    p {
+      font-size: 16px;
+    }
+    ul {
+      margin-top: 10px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    code {
+      font-family: Consolas, monospace;
+      background-color: #f4f4f4;
+      padding: 2px 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Rendering in der 2D-Spieleprogrammierung</h1>
+  <p><strong>Rendering</strong> bezeichnet den Prozess des Erstellens von Bildern aus einer 2D- oder 3D-Datenquelle. In der <strong>2D-Spieleprogrammierung</strong> bezieht sich Rendering auf das Zeichnen und Darstellen von Grafiken auf dem Bildschirm. Es handelt sich um den Vorgang, bei dem alle visuellen Elemente eines Spiels – wie Hintergründe, Figuren, Objekte und Effekte – berechnet und auf der Leinwand (z. B. einem <strong>Canvas</strong>-Element) angezeigt werden.</p>
+
+  <p>Im Kontext der <strong>2D-Spiel-Technik</strong> umfasst <strong>Rendering</strong> mehrere Schritte:</p>
+
+  <h2>1. Zeichnen von Objekten</h2>
+  <p>Alle visuellen Elemente eines Spiels, wie <strong>Sprites</strong> (2D-Grafiken, die für bewegliche Objekte verwendet werden), werden auf dem Bildschirm platziert. Das geschieht häufig durch einfache Befehle wie <code>ctx.fillRect</code> oder <code>ctx.drawImage</code> in HTML5-Canvas oder durch ähnliche Funktionen in anderen Engines.</p>
+
+  <h2>2. Layering und Reihenfolge</h2>
+  <p>Beim Rendering werden Objekte in einer bestimmten Reihenfolge gezeichnet. Beispielsweise könnte der Hintergrund zuerst gerendert werden, gefolgt von mittleren Objekten und schließlich den Vordergrundobjekten. Dies ist wichtig, um Überlappungen und richtige Sichtbarkeit zu gewährleisten.</p>
+
+  <h2>3. Effekte und Filter</h2>
+  <p>Rendering kann auch spezielle visuelle Effekte wie <strong>Schattierungen</strong>, <strong>Lichtreflexe</strong>, <strong>Transparenz</strong> oder <strong>Verläufe</strong> umfassen. In der 2D-Spieleprogrammierung können solche Effekte mit Farben, Verläufen und Alpha-Kanälen realisiert werden.</p>
+
+ 
+  <h2>Zusammenfassung</h2>
+  <p>Rendering ist also der gesamte Vorgang, bei dem visuelle Informationen (Grafiken, Objekte, Hintergründe) in einem Spiel so bearbeitet werden, dass sie korrekt und sichtbar auf dem Bildschirm erscheinen.</p>
+
+</body>
+</html>
